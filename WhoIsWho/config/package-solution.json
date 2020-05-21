@@ -1,0 +1,24 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "who-is-who-client-side-solution",
+    "id": "f669cd6f-58de-480c-bc9c-32489e3d3257",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false,
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "User.Read.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Presence.Read.All"
+      }
+
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/who-is-who.sppkg"
+  }
+}

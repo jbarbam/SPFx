@@ -1,0 +1,25 @@
+.personBoard {
+  font-size: 0px;
+  max-height: 67vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+
+  .personBoardTile {
+    width: 350px;
+    height: 100px;
+    padding: 2px;
+    position: relative;
+    float: left;
+  }
+
+  .personBoardSizer {
+    padding-bottom: 100%;
+  }
+  .personBoardPadder {
+    margin: 2px 2px 2px 2px;
+    position: absolute;
+  }
+}
+
+
