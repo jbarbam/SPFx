@@ -1,4 +1,3 @@
-import "@pnp/graph/users";
 import { MSGraphClient} from '@microsoft/sp-http';
 import { IPersonPresence } from '../models/IPersonPresence';
 import * as Utils from '../Utils';
