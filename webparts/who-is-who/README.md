@@ -2,7 +2,7 @@
 
 ## Summary
 
-![Who is Who](./images/who-is-who.gif)
+![Who is Who](./assets/who-is-who.gif)
 
 This sample represent a user M365 search webpart.
 The current user can search users by the next M365 user properties:
@@ -73,7 +73,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
 
-    ![Upload to App Catalog](./images/who-is-who-app-catalog.png)
+    ![Upload to App Catalog](./assets/who-is-who-app-catalog.png)
 
     This deploys the client-side solution package. Because this is a full trust client-side solution, SharePoint displays a dialog and asks you to trust the client-side solution to deploy.
 
@@ -83,7 +83,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
     Notice the request to go to *API Management Page to approved pending permissions* and the list of required permissions, in this case being `User.Read.All, Presence.Read.All` for Microsoft Graph.
 
-    ![Trust solution deployment](./images/who-is-who-trust-solution.png)
+    ![Trust solution deployment](./assets/who-is-who-trust-solution.png)
 
 1. Select **Deploy**.
 
@@ -97,15 +97,15 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 1. Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval
 
-    ![API management](./images/who-is-who-api-admin.png)
+    ![API management](./assets/who-is-who-api-admin.png)
 
 1. Select the pending permissions row and choose **Approve or reject** from the toolbar
 
-    ![Approve or reject](./images/who-is-who-approve-menu.png)
+    ![Approve or reject](./assets/who-is-who-approve-menu.png)
 
 1. Review the requested permissions in the left panel and choose **Approve**
 
-    ![Approve](./images/who-is-who-approve.png)
+    ![Approve](./assets/who-is-who-approve.png)
 
   > **IMPORTANT**
   > Account used for granting the requested permissions will need to be a tenant administrator. SharePoint administrator permission is not sufficient as the operation is actually performed towards Azure Active Directory.
@@ -116,11 +116,11 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 1. Create a new modern page to the site or edit existing page
 1. Use search term `Who` in the web part picker to find your web part
 
-    ![web part picker](./images/who-is-who-webpart-picker.png)
+    ![web part picker](./assets/who-is-who-webpart-picker.png)
 
 1. Choose **WhoIsWho** from the list and notice how the web part renders the latest five emails from the current user using information from the Microsoft Graph API
 
-   ![web part picker](./images/who-is-who-webpart.png)
+   ![web part](./assets/who-is-who-webpart.png)
 
 ## Features
 
