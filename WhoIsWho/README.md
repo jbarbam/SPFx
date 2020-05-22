@@ -68,7 +68,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
   1. Go to your tenant's or sitecollection SharePoint App Catalog.
 
-  1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog.
+  1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
 
     ![Upload solution to App Catalog](./images/who-is-who-app-catalog.png)
 
