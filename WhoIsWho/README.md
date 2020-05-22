@@ -48,15 +48,15 @@ Version|Date|Comments
 ## Building the code
 
 1. Clone the report in your local machine.
-  ```bash
-  git clone the repo
-  ```
+    ```bash
+    git clone the repo
+    ```
 1. Install the dependencies.
-  ```shell
-  npm install
-  ```
+    ```bash
+    npm install
+    ```
 1. Bundle the solution in release mode.
-  ```shell
+  ```bash
   gulp bundle --ship
   ```
 1. Package the solution.
