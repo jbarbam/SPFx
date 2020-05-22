@@ -66,6 +66,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 > [!NOTE]
 > If you don't have an app catalog, a SharePoint Online Admin can create one by following the instructions in this guide: [Use the App Catalog to make custom business apps available for your SharePoint Online environment](https://support.office.com/article/use-the-app-catalog-to-make-custom-business-apps-available-for-your-sharepoint-online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0).
 
+### Deploying the package
   1. Go to your tenant's or sitecollection SharePoint App Catalog.
 
   1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
