@@ -47,19 +47,19 @@ Version|Date|Comments
 
 ### Building the code
 
-1. Clone the report in your local machine.
+* Clone the report in your local machine.
 ```bash
 git clone the repo
 ```
-1. Install the dependencies.
+* Install the dependencies.
 ```shell
 npm install
 ```
-1. Bundle the solution in release mode.
+* Bundle the solution in release mode.
 ```shell
 gulp bundle --ship
 ```
-1. Package the solution.
+* Package the solution.
 ```shell
 gulp package-solution --ship
 ```
@@ -69,9 +69,9 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 ### Deploying the package
 
-1. Go to your tenant's or sitecollection SharePoint App Catalog.
+* Go to your tenant's or sitecollection SharePoint App Catalog.
 
-1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
+* Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
 
     ![Upload to App Catalog](./images/who-is-who-app-catalog.png)
 
@@ -85,7 +85,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
     ![Trust solution deployment](./images/who-is-who-trust-solution.png)
 
-1. Select **Deploy**.
+* Select **Deploy**.
 
   Notice that you can see if there's any exceptions or issues in the package by looking the **App Package Error Message** column in the App Catalog.
 
@@ -93,17 +93,17 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 ## Approving requested Graph API permissions
 
-1. Move to the SharePoint tenant administrative UIs located at `https://<tenant>-admin.sharepoint.com`
+* Move to the SharePoint tenant administrative UIs located at `https://<tenant>-admin.sharepoint.com`
 
-1. Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval
+* Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval
 
     ![API management](./images/who-is-who-api-admin.png)
 
-1. Select the pending permissions row and choose **Approve or reject** from the toolbar
+* Select the pending permissions row and choose **Approve or reject** from the toolbar
 
     ![Approve or reject](./images/who-is-who-approve-menu.png)
 
-1. Review the requested permissions in the left panel and choose **Approve**
+* Review the requested permissions in the left panel and choose **Approve**
 
     ![Approve](./images/who-is-who-approve.png)
 
@@ -112,13 +112,13 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 ## Using web part in SharePoint
 
-1. Go to a site where you want to test the web part. We did deploy web part using the tenant scoped deployment option, so it will be available on any site.
-1. Create a new modern page to the site or edit existing page
-1. Use search term `Who` in the web part picker to find your web part
+* Go to a site where you want to test the web part. We did deploy web part using the tenant scoped deployment option, so it will be available on any site.
+* Create a new modern page to the site or edit existing page
+* Use search term `Who` in the web part picker to find your web part
 
     ![web part picker](./images/who-is-who-webpart-picker.png)
 
-1. Choose **WhoIsWho** from the list and notice how the web part renders the latest five emails from the current user using information from the Microsoft Graph API
+* Choose **WhoIsWho** from the list and notice how the web part renders the latest five emails from the current user using information from the Microsoft Graph API
 
    ![web part picker](./images/who-is-who-webpart.png)
 
