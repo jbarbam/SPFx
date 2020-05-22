@@ -56,13 +56,13 @@ Version|Date|Comments
     npm install
     ```
 1. Bundle the solution in release mode.
-  ```bash
-  gulp bundle --ship
-  ```
+    ```bash
+    gulp bundle --ship
+    ```
 1. Package the solution.
-  ```shell
-  gulp package-solution --ship
-  ```
+    ```bash
+    gulp package-solution --ship
+    ```
 Next, You need to deploy the package that was generated to tenant or sitecollection App Catalog.
 > **NOTE**
 > If you don't have an app catalog, a SharePoint Online Admin can create one by following the instructions in this guide: [Use the App Catalog to make custom business apps available for your SharePoint Online environment](https://support.office.com/article/use-the-app-catalog-to-make-custom-business-apps-available-for-your-sharepoint-online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0).
