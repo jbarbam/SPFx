@@ -1,4 +1,3 @@
-
 # SPFx webpart Who is Who. Search users in M365
 
 ## Summary
