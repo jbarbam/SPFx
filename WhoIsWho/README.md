@@ -13,6 +13,7 @@ The current user can search users by the next M365 user properties:
 - jobTitle
 - city
 
+Also user information, the webpart shows user photo when it is informed and presence state.
 This webpart uses MS Graph API to make the search and Fluent UI controls to representing user information retrieve by MS Graph API calls.
 
 For each user in results, his presence is checked every 10 seconds.
@@ -63,15 +64,16 @@ gulp bundle --ship
 gulp package-solution --ship
 ```
 Next, You need to deploy the package that was generated to tenant or sitecollection App Catalog.
-> [!NOTE]
+> **NOTE**
 > If you don't have an app catalog, a SharePoint Online Admin can create one by following the instructions in this guide: [Use the App Catalog to make custom business apps available for your SharePoint Online environment](https://support.office.com/article/use-the-app-catalog-to-make-custom-business-apps-available-for-your-sharepoint-online-environment-0b6ab336-8b83-423f-a06b-bcc52861cba0).
 
 ### Deploying the package
-  1. Go to your tenant's or sitecollection SharePoint App Catalog.
 
-  1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
+1. Go to your tenant's or sitecollection SharePoint App Catalog.
 
-    ![Upload solution to App Catalog](./images/who-is-who-app-catalog.png)
+1. Upload or drag and drop the **who-is-who.sppkg** to the App Catalog
+
+    ![Upload to App Catalog](./images/who-is-who-app-catalog.png)
 
     This deploys the client-side solution package. Because this is a full trust client-side solution, SharePoint displays a dialog and asks you to trust the client-side solution to deploy.
 
@@ -81,17 +83,18 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
     Notice the request to go to *API Management Page to approved pending permissions* and the list of required permissions, in this case being `User.Read.All, Presence.Read.All` for Microsoft Graph.
 
-    ![Trust client-side solution deployment](./images/who-is-who-trust-solution.png)
+    ![Trust solution deployment](./images/who-is-who-trust-solution.png)
 
-  1. Select **Deploy**.
+1. Select **Deploy**.
 
-    Notice that you can see if there's any exceptions or issues in the package by looking the **App Package Error Message** column in the App Catalog.
+  Notice that you can see if there's any exceptions or issues in the package by looking the **App Package Error Message** column in the App Catalog.
 
-Now the web part is deployed and is automatically available cross the SharePoint Online sites, it's however important to realize that the web part *won't* work properly until the requested permissions have been approved.
+  Now the web part is deployed and is automatically available cross the SharePoint Online sites, it's however important to realize that the web part *won't* work properly until the requested permissions have been approved.
 
 ## Approving requested Graph API permissions
 
 1. Move to the SharePoint tenant administrative UIs located at `https://<tenant>-admin.sharepoint.com`
+
 1. Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval
 
     ![API management](./images/who-is-who-api-admin.png)
@@ -104,8 +107,7 @@ Now the web part is deployed and is automatically available cross the SharePoint
 
     ![Approve](./images/who-is-who-approve.png)
 
-
-  > [!IMPORTANT]
+  > **IMPORTANT**
   > Account used for granting the requested permissions will need to be a tenant administrator. SharePoint administrator permission is not sufficient as the operation is actually performed towards Azure Active Directory.
 
 ## Using web part in SharePoint
