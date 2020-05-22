@@ -62,7 +62,7 @@ SPFx|Juan Barba (M365 & SharePoint software engineer), @jbarbam)
 
 Overview |  Web Part |  Description
 ------------ | ----------- | -----------
-![Who is Who](./assets/who-is-who-webpart.png) | [**Who is Who**](https://github.com/jbarbam/SPFx/webparts/who-is-who) | With this web part, you can search users. This web part use MS Graph API to access users information and Fluent UI controls to show these user information.
+![Who is Who](./assets/who-is-who-webpart.png) | [**Who is Who**](https://github.com/jbarbam/SPFx/tree/master/webparts/who-is-who) | With this web part, you can search users. This web part use MS Graph API to access users information and Fluent UI controls to show these user information.
 
 
 > Sharing is caring!
