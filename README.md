@@ -11,18 +11,16 @@ This repository contains SPFx samples realized by @jbarbam.
 * [Visual Studio Extension for SharePoint Framework projects](https://github.com/SharePoint/sp-dev-fx-vs-extension)
 
 ## Using the samples
-
 To build and start using these projects, you'll need to clone and build the projects.
-
-1. Clone this repository by executing the following command in your console:
-```bash
-git clone https://github.com/jbarbam/SPFx.git
-```
-1. Navigate to the cloned repository folder:
-```bash
-cd `repository-folder-name`
-```
-1. Access to sample webpart.
+  1. Clone this repository by executing the following command in your console:
+  ```bash
+  git clone https://github.com/jbarbam/SPFx.git
+  ```
+  1. Navigate to the cloned repository folder:
+  ```bash
+  cd `repository-folder-name`
+  ```
+  1. Access to sample webpart.
 
 To access the samples use the following command, where you replace `sample-folder-name` with the name of the sample you want to access.
 
