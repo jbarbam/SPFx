@@ -1,0 +1,24 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.scrollIndicator {
+  position: fixed;
+  z-index: 99;
+  height: 8px;
+  top:200px;
+  width: 1200px;
+
+
+  /* The progress container (grey background) */
+  .progressContainer {
+    background: #ccc;
+    height: 8px;
+  }
+
+  /* The progress bar (scroll indicator) */
+  .progressBar {
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.2s linear;
+    height: 8px;
+  }
+}
