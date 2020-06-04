@@ -1,0 +1,13 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "scroll-page-indicator-client-side-solution",
+    "id": "f0e40c29-b53a-4b5c-ab42-d82323f6770d",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "isDomainIsolated": false
+  },
+  "paths": {
+    "zippedPackage": "solution/scroll-page-indicator.sppkg"
+  }
+}
