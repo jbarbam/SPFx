@@ -1,24 +1,31 @@
 @import '~office-ui-fabric-react/dist/sass/References.scss';
 
-.scrollIndicator {
-  position: fixed;
-  z-index: 99;
-  height: 8px;
-  top:200px;
-  width: 1200px;
+ %scrollIndicator {
+    position: fixed;
+    z-index: 99;
+    height: 8px;
+    width: 100%;
+    left: 0px;
+ }
 
+ .scrollIndicator_shareenv {
+    @extend %scrollIndicator;
+    top:150px;
+ }
 
-  /* The progress container (grey background) */
-  .progressContainer {
+ .scrollIndicator_localenv {
+    @extend %scrollIndicator;
+    top:90px;
+ }
+
+ .progressContainer {
     background: #ccc;
     height: 8px;
-  }
+ }
 
-  /* The progress bar (scroll indicator) */
-  .progressBar {
-    background: #4caf50;
+ .progressBar {
+    background: "[theme: themePrimary, default: #0078d7]";
     width: 0%;
     transition: width 0.2s linear;
     height: 8px;
-  }
-}
+ }

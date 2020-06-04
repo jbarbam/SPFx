@@ -93,17 +93,17 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 ## Approving requested Graph API permissions
 
-1. Move to the SharePoint tenant administrative UIs located at `https://<tenant>-admin.sharepoint.com`
+1. Move to the SharePoint tenant administrative UIs located at `https://<tenant>-admin.sharepoint.com`.
 
-1. Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval
+1. Move to **API management** under the **Advance** left menu option to see the currently pending permission requests. Notice that the request for `User.Read.All, Presence.Read.All` permissions for in Graph API is pending for approval.
 
     ![API management](./assets/who-is-who-api-admin.png)
 
-1. Select the pending permissions row and choose **Approve or reject** from the toolbar
+1. Select the pending permissions row and choose **Approve or reject** from the toolbar.
 
     ![Approve or reject](./assets/who-is-who-approve-menu.png)
 
-1. Review the requested permissions in the left panel and choose **Approve**
+1. Review the requested permissions in the left panel and choose **Approve**.
 
     ![Approve](./assets/who-is-who-approve.png)
 
@@ -113,12 +113,12 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 ## Using web part in SharePoint
 
 1. Go to a site where you want to test the web part. We did deploy web part using the tenant scoped deployment option, so it will be available on any site.
-1. Create a new modern page to the site or edit existing page
-1. Use search term `Who` in the web part picker to find your web part
+1. Create a new modern page to the site or edit existing page.
+1. Use search term `Who` in the web part picker to find your web part.
 
     ![web part picker](./assets/who-is-who-webpart-picker.png)
 
-1. Choose **WhoIsWho** from the list and notice how the web part renders the latest five emails from the current user using information from the Microsoft Graph API
+1. Choose **WhoIsWho** from the list and notice how the web part renders all tenant users using information from the Microsoft Graph API.
 
    ![web part](./assets/who-is-who-webpart.png)
 
@@ -126,7 +126,7 @@ Next, You need to deploy the package that was generated to tenant or sitecollect
 
 This sample illustrates the following concepts on top of the SharePoint Framework:
 
-* Using GraphHttpClient to get data from MS Graph API
-* How to get Presence information using MS Graph API
-* Using async / await for the async calls
-* Fluent UI fabric components
+* Using GraphHttpClient to get data from MS Graph API.
+* How to get Presence information using MS Graph API.
+* Using async / await for the async calls.
+* Fluent UI fabric components.

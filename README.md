@@ -63,6 +63,7 @@ SPFx|Juan Barba (M365 & SharePoint software engineer), @jbarbam)
 Overview |  Web Part |  Description
 ------------ | ----------- | -----------
 ![Who is Who](./assets/who-is-who-webpart.png) | [**Who is Who**](https://github.com/jbarbam/SPFx/webparts/who-is-who) | With this web part, you can search users. This web part use MS Graph API to access users information and Fluent UI controls to show these user information.
+![Scroll Page Indicator](./assets/scroll-page-indicator-webpart.png) | [**Scroll Page Indicator**](https://github.com/jbarbam/SPFx/webparts/scroll-page-indicator) | This webpart represents scrollbar page indicator for SharePoint modern pages.The progress bar increases or decreases when user scrolling through the page..
 
 
 > Sharing is caring!
