@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "doclib-treeview-client-side-solution",
+    "id": "5da572c1-68be-4fb4-85a1-069d45d89069",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.18.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "doclib-treeview description"
+      },
+      "longDescription": {
+        "default": "doclib-treeview description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "doclib-treeview Feature",
+        "description": "The feature that activates elements of the doclib-treeview solution.",
+        "id": "bb11e687-c0d6-49ed-ba0b-d8a108d9b116",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/doclib-treeview.sppkg"
+  }
+}

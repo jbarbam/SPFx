@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "doclib-treeview-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/doclibTreeview/DoclibTreeviewWebPart.js",
+          "manifest": "./src/webparts/doclibTreeview/DoclibTreeviewWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "DoclibTreeviewWebPartStrings": "lib/webparts/doclibTreeview/loc/{locale}.js"
+  }
+}

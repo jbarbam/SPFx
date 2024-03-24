@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.19.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.0",
+    "libraryName": "doclib-treeview",
+    "libraryId": "5da572c1-68be-4fb4-85a1-069d45d89069",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "doclib-treeview",
+    "solutionShortDescription": "doclib-treeview description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
