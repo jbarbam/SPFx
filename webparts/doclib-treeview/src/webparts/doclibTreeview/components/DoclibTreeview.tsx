@@ -4,17 +4,18 @@ import { escape } from '@microsoft/sp-lodash-subset';
 import { getSP } from  '../../../pnpjs-config';
 import { Logger, LogLevel } from "@pnp/logging";
 import { SPFI } from "@pnp/sp";
+import { TreeView, ITreeItem, TreeViewSelectionMode } from "@pnp/spfx-controls-react/lib/TreeView";
 
 import type { IDoclibTreeviewProps } from './IDoclibTreeviewProps';
 import { IDoclibTreeviewState } from './IDoclibTreeviewState';
 import { DoclibTreeviewService } from '../../../code/services/DoclibTreeviewService';
-import { IResponseItem } from '../../../code/models/IResponseItem';
 
 
 export default class DoclibTreeview extends React.Component<IDoclibTreeviewProps, IDoclibTreeviewState> {
   private _sp: SPFI;
   private LOG_SOURCE = "Document Library Treeview";
   private _service: DoclibTreeviewService;
+  
   
   constructor(props:IDoclibTreeviewProps ) {
     super(props);
@@ -26,7 +27,7 @@ export default class DoclibTreeview extends React.Component<IDoclibTreeviewProps
   }
 
   public componentDidMount(): void {
-      this.getDoclibTreeview()
+      this.getDoclibTreeview().then()
           .catch(err => console.log(`${this.LOG_SOURCE} (getDoclibTreeview) - ${JSON.stringify(err)} - `, LogLevel.Error));
   }
  
@@ -39,6 +40,12 @@ export default class DoclibTreeview extends React.Component<IDoclibTreeviewProps
       <section>
         <div className={styles.welcome}>
           <div>Document library name: <strong>{escape(doclibName)}</strong></div>
+          <TreeView 
+              items={this.state.doclibtreeview}
+              defaultExpanded={true}
+              selectionMode={TreeViewSelectionMode.Single}
+              showCheckboxes={false}
+           />
         </div>
       </section>
     )
@@ -47,7 +54,7 @@ export default class DoclibTreeview extends React.Component<IDoclibTreeviewProps
   private getDoclibTreeview = async(): Promise<void> => {
 
     try{
-      const doclibtreeview: Array<IResponseItem> = await this._service.getDoclibTreeview(this.props.doclibName);
+      const doclibtreeview: Array<ITreeItem> = await this._service.getDoclibTreeview(this.props.doclibName);
        // Add the items to the state
        this.setState({ doclibtreeview });
 

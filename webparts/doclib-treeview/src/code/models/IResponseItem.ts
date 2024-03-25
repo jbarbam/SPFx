@@ -5,4 +5,5 @@ export interface IResponseItem {
     Name: string;
     Title: string;
     ServerRelativeUrl: string;
+    Children:Array<IResponseItem>;
   }

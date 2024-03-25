@@ -1,5 +1,5 @@
-import { IResponseItem } from "../../../code/models/IResponseItem";
+import { ITreeItem } from "@pnp/spfx-controls-react/lib/TreeView";
 
 export interface IDoclibTreeviewState {
-    doclibtreeview: Array<IResponseItem>;
+    doclibtreeview: Array<ITreeItem>;
 }
